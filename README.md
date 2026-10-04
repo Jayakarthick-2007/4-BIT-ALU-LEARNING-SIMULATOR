@@ -62,7 +62,7 @@ For two 4-bit inputs:
 Result = 0100
 Carry  = 1
 
-🔍 Step-by-Step Learning
+#### 🔍 Step-by-Step Learning
 
 The simulator provides detailed steps for:
 
@@ -77,14 +77,14 @@ Final 4-bit result
 
 This makes the project useful not only as a calculator but also as a learning tool for Computer Organization and Architecture.
 
-🖥️ Technologies Used :
+##### 🖥️ Technologies Used :
 
 HTML5 – Website structure
 CSS3 – User interface and styling
 JavaScript – ALU operations and step-by-step simulation
 GitHub Pages – Website deployment
 
-🏗️ Project Architecture :
+###### 🏗️ Project Architecture :
 
           Input A (4-bit)
                 │
@@ -105,7 +105,7 @@ Input B → │    4-Bit    │
                  ▼
        Result + Carry/Borrow
 
-🧠 Relation to CPU
+####### 🧠 Relation to CPU
 
 The ALU is a major component of the CPU and is mainly involved in the Execute stage of the instruction cycle.
 
@@ -115,7 +115,7 @@ Fetch → Decode → EXECUTE → Memory → Write Back
                    ALU
 This project demonstrates how the ALU performs arithmetic and logical operations during the execution of an instruction
 
-👥 Team Members :
+######## 👥 Team Members :
 
 | S.No. | Team Member        |
 | ----- | ------------------ |
