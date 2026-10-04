@@ -91,45 +91,48 @@ This makes the project useful not only as a calculator but also as a **learning 
 
 ## 🏗️ Project Architecture
 
-```text
-             ┌─────────────────────┐
-             │   Input A (4-bit)   │
-             │      1101           │
-             └──────────┬──────────┘
-                        │
-                        ▼
-             ┌─────────────────────┐
-             │                     │
-             │      4-BIT ALU      │
-             │                     │
-             │  ADD / SUB / MUL    │
-             │  AND / OR / XOR     │
-             │  NAND / NOR / XNOR  │
-             │                     │
-             └──────────┬──────────┘
-                        ▲
-                        │
-             ┌──────────┴──────────┐
-             │   Input B (4-bit)   │
-             │      0111           │
-             └─────────────────────┘
-                        │
-                        ▼
-             ┌─────────────────────┐
-             │ Selected Operation   │
-             └──────────┬──────────┘
-                        │
-                        ▼
-             ┌─────────────────────┐
-             │ Step-by-Step        │
-             │ Processing          │
-             └──────────┬──────────┘
-                        │
-                        ▼
-             ┌─────────────────────┐
-             │ Final Result         │
-             │ + Carry / Borrow     │
-             └─────────────────────┘
+    ┌─────────────────────┐
+    │   Input A (4-bit)   │
+    │       1101          │
+    └──────────┬──────────┘
+               │
+               ▼
+    ┌─────────────────────┐
+    │                     │
+    │      4-BIT ALU      │
+    │                     │
+    │  ADD / SUB / MUL    │
+    │  AND / OR / XOR     │
+    │  NAND / NOR / XNOR  │
+    │                     │
+    └──────────┬──────────┘
+               ▲
+               │
+    ┌──────────┴──────────┐
+    │   Input B (4-bit)   │
+    │       0111          │
+    └─────────────────────┘
+               │
+               ▼
+    ┌─────────────────────┐
+    │ Selected Operation  │
+    └──────────┬──────────┘
+               │
+               ▼
+    ┌─────────────────────┐
+    │ Step-by-Step        │
+    │ Processing          │
+    └──────────┬──────────┘
+               │
+               ▼
+    ┌─────────────────────┐
+    │ Final Result        │
+    │ + Carry / Borrow    │
+    └─────────────────────┘
+
+### 🔄 Working Flow
+
+**Input A + Input B → 4-Bit ALU → Select Operation → Step-by-Step Processing → Result + Carry/Borrow**
 
 ---
 
@@ -138,9 +141,9 @@ This makes the project useful not only as a calculator but also as a **learning 
 The ALU is a major component of the CPU and is mainly involved in the **Execute stage** of the instruction cycle.
 
     Fetch → Decode → EXECUTE → Memory → Write Back
-                       │
-                       ▼
-                      ALU
+                        │
+                        ▼
+                       ALU
 
 This project demonstrates how the ALU performs arithmetic and logical operations during the execution of an instruction.
 
