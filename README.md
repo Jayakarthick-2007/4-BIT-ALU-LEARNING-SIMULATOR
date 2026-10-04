@@ -53,71 +53,125 @@ For two 4-bit inputs:
 
 ### Addition
 
-```text
-   1101
- + 0111
- -------
-  10100
+    1101
+  + 0111
+  -------
+   10100
 
-Result = 0100
-Carry  = 1
+**Result = 0100**  
+**Carry = 1**
 
-#### 🔍 Step-by-Step Learning
+---
+
+## 🔍 Step-by-Step Learning
 
 The simulator provides detailed steps for:
 
-Binary addition
-Carry generation and propagation
-Binary subtraction
-Borrow calculation
-Binary multiplication
-Partial products
-Bitwise logic operations
-Final 4-bit result
+- Binary addition
+- Carry generation and propagation
+- Binary subtraction
+- Borrow calculation
+- Binary multiplication
+- Partial products
+- Bitwise logic operations
+- Final 4-bit result
 
-This makes the project useful not only as a calculator but also as a learning tool for Computer Organization and Architecture.
+This makes the project useful not only as a calculator but also as a **learning tool for Computer Organization and Architecture**.
 
-##### 🖥️ Technologies Used :
+---
 
-HTML5 – Website structure
-CSS3 – User interface and styling
-JavaScript – ALU operations and step-by-step simulation
-GitHub Pages – Website deployment
+## 🖥️ Technologies Used
 
-###### 🏗️ Project Architecture :
+- **HTML5** – Website structure
+- **CSS3** – User interface and styling
+- **JavaScript** – ALU operations and step-by-step simulation
+- **GitHub Pages** – Website deployment
 
-          Input A (4-bit)
-                │
-                ▼
-          ┌─────────────┐
-          │             │
-Input B → │    4-Bit    │
-          │     ALU     │
-          │             │
-          └──────┬──────┘
-                 │
-                 ▼
-        Selected Operation
-                 │
-                 ▼
-       Step-by-Step Processing
-                 │
-                 ▼
-       Result + Carry/Borrow
+---
 
-####### 🧠 Relation to CPU
+## 🏗️ Project Architecture
 
-The ALU is a major component of the CPU and is mainly involved in the Execute stage of the instruction cycle.
+    Input A (4-bit)
+           │
+           ▼
+     ┌─────────────┐
+     │             │
+Input B →  4-Bit   │
+     │     ALU     │
+     │             │
+     └──────┬──────┘
+            │
+            ▼
+    Selected Operation
+            │
+            ▼
+    Step-by-Step Processing
+            │
+            ▼
+    Result + Carry/Borrow
 
-Fetch → Decode → EXECUTE → Memory → Write Back
-                    │
-                    ▼
-                   ALU
-This project demonstrates how the ALU performs arithmetic and logical operations during the execution of an instruction
+---
 
-######## 👥 Team Members :
+## 🧠 Relation to CPU
 
-| S.No. | Team Member        |
-| ----- | ------------------ |
-| 1     | **JAYAKARTHICK A** |
-| 2     | **SIVAGURU N**     |
+The ALU is a major component of the CPU and is mainly involved in the **Execute stage** of the instruction cycle.
+
+    Fetch → Decode → EXECUTE → Memory → Write Back
+                       │
+                       ▼
+                      ALU
+
+This project demonstrates how the ALU performs arithmetic and logical operations during the execution of an instruction.
+
+---
+
+## ⭐ Key Features
+
+- ✅ Interactive 4-bit binary inputs
+- ✅ 9 ALU operations
+- ✅ Step-by-step operation display
+- ✅ Carry visualization
+- ✅ Borrow visualization
+- ✅ Binary multiplication steps
+- ✅ Logic operation demonstration
+- ✅ Clean and interactive interface
+- ✅ Runs directly in a web browser
+- ✅ No additional software installation required
+
+---
+
+## 👥 Team Members
+
+| S.No. | Team Member |
+|---:|---|
+| 1 | **JAYAKARTHICK A** |
+| 2 | **SIVAGURU N** |
+
+---
+
+## 📚 Project Information
+
+**Project Title:** 4-Bit ALU Step-by-Step Simulator
+
+**Subject:** Computer Organization and Architecture (COA)
+
+**Project Type:** Web-Based Interactive Simulator
+
+**Platform:** GitHub Pages
+
+---
+
+## 🚀 How to Use
+
+1. Open the **Live Demo** link at the top.
+2. Enter two 4-bit binary numbers.
+3. Select an ALU operation.
+4. Click **Next Step** to see the calculation step by step.
+5. View the final binary result.
+6. Check the carry or borrow information where applicable.
+
+---
+
+## 📄 License
+
+This project was developed for educational purposes as part of a **Computer Organization and Architecture (COA)** project.
