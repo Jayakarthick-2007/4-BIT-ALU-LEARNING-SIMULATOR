@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+
+<title>4-Bit ALU Learning Simulator</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<header class="header">
+
+<h1>⚡ 4-BIT ALU LEARNING SIMULATOR</h1>
+
+<p>
+Step-by-step Arithmetic and Logic Operations
+</p>
+
+</header>
+
+
+<main class="container">
+
+
+<!-- INPUT SECTION -->
+
+<section class="card">
+
+<h2>1. Enter Two 4-Bit Numbers</h2>
+
+
+<div class="inputs">
+
+
+<div>
+
+<div class="input-title">
+INPUT A
+</div>
+
+<div class="bits" id="inputA">
+
+<input class="bit" maxlength="1" inputmode="numeric" value="1">
+<input class="bit" maxlength="1" inputmode="numeric" value="1">
+<input class="bit" maxlength="1" inputmode="numeric" value="0">
+<input class="bit" maxlength="1" inputmode="numeric" value="1">
+
+</div>
+
+<div class="decimal">
+Decimal = <b id="decimalA">13</b>
+</div>
+
+</div>
+
+
+
+<div>
+
+<div class="input-title">
+INPUT B
+</div>
+
+<div class="bits" id="inputB">
+
+<input class="bit" maxlength="1" inputmode="numeric" value="0">
+<input class="bit" maxlength="1" inputmode="numeric" value="1">
+<input class="bit" maxlength="1" inputmode="numeric" value="1">
+<input class="bit" maxlength="1" inputmode="numeric" value="1">
+
+</div>
+
+<div class="decimal">
+Decimal = <b id="decimalB">7</b>
+</div>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<!-- OPERATION -->
+
+<section class="card">
+
+<h2>2. Select Operation</h2>
+
+
+<div class="operations">
+
+<button class="op-btn active" data-op="ADD">
+ADD
+</button>
+
+<button class="op-btn" data-op="SUB">
+SUB
+</button>
+
+<button class="op-btn" data-op="MUL">
+MULTIPLY
+</button>
+
+<button class="op-btn" data-op="AND">
+AND
+</button>
+
+<button class="op-btn" data-op="OR">
+OR
+</button>
+
+<button class="op-btn" data-op="XOR">
+XOR
+</button>
+
+<button class="op-btn" data-op="NAND">
+NAND
+</button>
+
+<button class="op-btn" data-op="NOR">
+NOR
+</button>
+
+<button class="op-btn" data-op="XNOR">
+XNOR
+</button>
+
+</div>
+
+</section>
+
+
+
+<!-- OPERATION -->
+
+<section class="card">
+
+<div class="operation-name" id="operationName">
+ADD
+</div>
+
+
+<div class="binary-display" id="binaryDisplay">
+
+1101<br>
+
++ 0111
+
+<hr>
+
+<span class="answer">
+0000
+</span>
+
+</div>
+
+
+<div class="step-controls">
+
+<button class="control-btn" id="nextBtn">
+▶ NEXT STEP
+</button>
+
+<button class="control-btn" id="allBtn">
+▶ SHOW ALL STEPS
+</button>
+
+<button class="control-btn reset-btn" id="resetBtn">
+↻ RESET
+</button>
+
+</div>
+
+
+<div class="step-info">
+
+<div class="step-number" id="stepNumber">
+Ready
+</div>
+
+<div class="step-description" id="stepDescription">
+Select an operation and press NEXT STEP to see how the ALU performs the calculation.
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- RESULT -->
+
+<section class="card result-box">
+
+<h2>Final Result</h2>
+
+
+<div class="final-result" id="finalResult">
+----
+</div>
+
+
+<div class="decimal-result">
+
+Decimal Result:
+<b id="finalDecimal">----</b>
+
+</div>
+
+
+<div class="carry-box">
+
+Carry / Borrow:
+<span id="carryResult">
+----
+</span>
+
+</div>
+
+</section>
+
+
+
+<!-- EXPLANATION -->
+
+<section class="card">
+
+<h2>How the ALU Works</h2>
+
+<div class="explanation">
+
+<p>
+<strong>ADD:</strong>
+The ALU adds the two 4-bit numbers starting from the least significant bit.
+Each bit produces a result bit and may generate a carry for the next bit.
+</p>
+
+<p>
+<strong>SUB:</strong>
+Subtraction is performed using the two's-complement method.
+The second number is complemented and then added to the first number.
+</p>
+
+<p>
+<strong>MULTIPLY:</strong>
+Binary multiplication generates partial products depending on each bit of the multiplier.
+The partial products are shifted and added.
+</p>
+
+<p>
+<strong>AND:</strong>
+The output bit is 1 only when both input bits are 1.
+</p>
+
+<p>
+<strong>OR:</strong>
+The output bit is 1 when at least one input bit is 1.
+</p>
+
+<p>
+<strong>XOR:</strong>
+The output bit is 1 when the input bits are different.
+</p>
+
+<p>
+<strong>NAND:</strong>
+NAND is the complement of AND.
+</p>
+
+<p>
+<strong>NOR:</strong>
+NOR is the complement of OR.
+</p>
+
+<p>
+<strong>XNOR:</strong>
+XNOR is the complement of XOR. The output is 1 when both input bits are equal.
+</p>
+
+</div>
+
+</section>
+
+
+</main>
+
+
+
+<script src="script.js"></script>
+
+
+</body>
+</html>
